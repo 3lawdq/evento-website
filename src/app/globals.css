@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ===============================
+   THEME VARIABLES
+================================= */
+
+:root {
+  --primary: #165ba2;
+  --accent: #ba684c;
+  --secondary: #f2c4ac;
+
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+
+  --radius: 0.75rem;
+}
+
+/* ===============================
+   BASE STYLES
+================================= */
+
+@layer base {
+  * {
+      box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-geist);
+    background: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f8f4f1 50%,
+      #f2c4ac 100%
+    );
+    color: var(--foreground);
+    min-height: 100vh;
+  }
+
+  section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+/* ===============================
+   UTILITIES
+================================= */
+
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 md:px-6;
+}

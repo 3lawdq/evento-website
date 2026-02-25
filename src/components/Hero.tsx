@@ -13,7 +13,7 @@ export default function Hero() {
       {/* Parallax Background */}
       <motion.div style={{ y }} className="absolute inset-0">
         <Image
-          src="/events/grad1.jpg"
+          src="/events/star.jpg"
           alt="Evento Graduation Event"
           fill
           priority

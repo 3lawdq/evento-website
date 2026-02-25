@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   title: "Evento | تنظيم حفلات التخرج",
   description:
     "نصنع لحظات تخرج لا تُنسى بإخراج مسرحي احترافي وتوثيق عالي الجودة.",
-  url: "https://your-domain.com",
+  url: "https://evento-website-smoky.vercel.app/",
   siteName: "Evento",
   locale: "ar_IQ",
   type: "website",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   ],
 },
-  metadataBase: new URL("https://your-domain.com"),
+  metadataBase: new URL("https://evento-website-smoky.vercel.app/"),
 };
 
 export default function RootLayout({

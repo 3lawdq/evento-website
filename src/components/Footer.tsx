@@ -44,12 +44,12 @@ export default function Footer() {
 
           <div className="flex items-center justify-center md:justify-end gap-3 mb-3">
             <Phone size={18} />
-            <span className="text-sm">+964 7XXXXXXXXX</span>
+            <span className="text-sm">+967  772581954</span>
           </div>
 
           <div className="flex items-center justify-center md:justify-end gap-3 mb-6">
             <MapPin size={18} />
-            <span className="text-sm">العراق</span>
+            <span className="text-sm">اليمن</span>
           </div>
 
           {/* Social Icons */}

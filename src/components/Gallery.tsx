@@ -7,37 +7,43 @@ export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const events = [
-    {
-      image: "grad1.jpg",
-      university: "جامعة بغداد",
-      year: "2024",
-    },
-    {
-      image: "grad2.jpg",
-      university: "جامعة البصرة",
-      year: "2023",
-    },
-    {
-      image: "grad3.jpg",
-      university: "الجامعة المستنصرية",
-      year: "2024",
-    },
-    {
-      image: "grad4.jpg",
-      university: "جامعة الكوفة",
-      year: "2022",
-    },
-    {
-      image: "grad5.jpg",
-      university: "جامعة بابل",
-      year: "2023",
-    },
-    {
-      image: "grad6.jpg",
-      university: "جامعة ديالى",
-      year: "2024",
-    },
-  ];
+  {
+    thumbnail: "star1.jpg",
+    image: "grad1.jpg",
+    university: "جامعة تعز",
+    year: "2024",
+  },
+  {
+    thumbnail: "star2.jpg",
+    image: "grad2.jpg",
+    university: "جامعة تعز",
+    year: "2023",
+  },
+  {
+    thumbnail: "star3.jpg",
+    image: "grad3.jpg",
+    university: "جامعة العلوم",
+    year: "2024",
+  },
+  {
+    thumbnail: "star4.jpg",
+    image: "grad4.jpg",
+    university: "جامعة العلوم",
+    year: "2022",
+  },
+  {
+    thumbnail: "star5.jpg",
+    image: "grad5.jpg",
+    university: "جامعة العلوم",
+    year: "2023",
+  },
+  {
+    thumbnail: "star6.jpg",
+    image: "grad6.jpg",
+    university: "جامعة السعيد",
+    year: "2024",
+  },
+];
 
   return (
     <section
@@ -68,7 +74,7 @@ export default function Gallery() {
 
               {/* Image */}
               <Image
-  src={`/events/${event.image}`}
+  src={`/events/${event.thumbnail}`}
   alt={event.university}
   width={600}
   height={400}

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Geist, Cairo } from "next/font/google";
 import "./globals.css";
 
 const geist = Geist({
@@ -7,6 +7,12 @@ const geist = Geist({
   variable: "--font-geist",
 });
 
+
+const cairo = Cairo({
+  subsets: ["arabic"],
+  weight: ["400", "600", "700", "800"],
+  variable: "--font-cairo",
+});
 export const metadata: Metadata = {
   title: {
     default: "Evento | تنظيم حفلات التخرج والفعاليات",
@@ -51,7 +57,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ar" dir="rtl">
-      <body className={`${geist.variable} antialiased`}>
+      <body
+  className={`${geist.variable} ${cairo.variable} font-sans antialiased`}
+>
         {children}
       </body>
     </html>
